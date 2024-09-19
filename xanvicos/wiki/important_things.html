@@ -1,0 +1,54 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>XanvicOS Wiki</title>
+</head>
+<body>
+    <b>
+        <div style="text-align: center">
+            <img
+                src="https://vinceale7082.is-a.dev/xanvicos/xanvicos.png"
+                style="width: 426px; height: 240px"
+            />
+        </div>
+        <hr />
+        <a href="https://vinceale7082.is-a.dev"><u>Home</u></a> |
+        <a href="https://vinceale7082.is-a.dev/blog"><u>Blog</u></a> |
+        <a href="https://vinceale7082.is-a.dev/xanvicos"><u>XanvicOS</u></a> |
+        <a href="https://vinceale7082.is-a.dev/contattami"><u>Contattami</u></a>
+        <hr />
+        <h2>:)</h2>
+        <h2>Important things about XanvicOS</h2>
+        <h3><u>What is the XanvicOS's status</u></h3>
+        <br />
+        At this time XanvicOS just has a bootloader that doesn't support UEFI
+        divided in 2 stages. The first is written in assembly and loaded by the
+        boot manager.
+        <br />
+        The second is written in C and has printf.
+        <br />
+        <h3>
+            <u>What is the difference between the main and stable branch</u>
+        </h3>
+        <br />
+        How the name implies, if you want to use XanvicOS use the stable branch.
+        The main branch is just the branch where I commit code that doesn't
+        compile or is full of bugs.
+        <br />
+        <h3><u>How to build XanvicOS</u></h3>
+        If you want to try XanvicOS you need to:<br />
+        1- clone the XanvicOS repo `git clone --branch stable
+        https://vinceale7082.is-a.dev:3000/VinceAle7082/XanvicOS.git`<br />
+        2- compile it<br />
+        `make` <br />
+        Now all the files compliled are in the build/ directory, including the
+        floppy image (main_floppy.img).<br />
+        3- Install dependencies: openwatcom, mtools, dosfstools and qemu.<br />
+        4- Now run <br />
+        'qemu-system-x86_64 -fda build/main_floppy.img' <br />
+        (This command may change on your distro or architecture) <br />
+        <br />
+        <br />
+        <hr />
+        <p>~Vincenzo Aleksey Brocato</p>
+    </b>
+</body>
